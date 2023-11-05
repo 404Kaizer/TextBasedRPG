@@ -1,0 +1,171 @@
+:root {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(26, 26, 35);
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(188, 188, 150);
+    font-family: monospace;
+    font-size: 15px;
+    border: white solid 1px;
+}
+
+#body {
+    margin: 0;
+    height: 85vh;
+    padding: 50px;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 22% auto;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    border: white solid 1px;
+    background-color: rgb(22, 22, 30);
+    box-shadow: -15px 15px 10px rgb(0, 0, 0) ;
+
+    .leftPanel {
+        width: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        align-content: space-between;
+        padding: 10px;
+        border-right: white solid 1px;
+
+        .charInfoDiv {
+            display: grid;
+            row-gap: 20px;
+            
+            .nameDiv {
+                display: grid;
+                row-gap: 30px;
+                margin-bottom: 20px;
+                font-size: 20px;
+
+                .nameSpan {
+                    text-align: center;
+                }
+
+                .xpDiv {
+                    border: white solid 1px;
+
+                    .xpBar {
+                        text-align: center;
+                        color: black;
+                        background-color: greenyellow;
+                    }
+                }
+
+                .xpDiv:hover {
+                    border: white solid 2px;
+                    box-shadow: -2px 2px 5px rgb(135, 135, 135) ;
+                }
+            }
+    
+            .statusDiv {
+                display: grid;
+                row-gap: 20px;
+                font-size: 20px;
+
+                .hpDiv, .manaDiv, .sanDiv {
+                    border: white solid 1px;
+
+                    .hpBar, .manaBar, .sanBar {
+                        text-align: center;
+                    }
+        
+                    .hpBar {
+                        background-color: red;
+                    }
+        
+                    .manaBar {
+                        background-color: blue;
+                    }
+        
+                    .sanBar {
+                        background-color: purple;
+                    }
+                }
+
+                .hpDiv:hover, .manaDiv:hover, .sanDiv:hover {
+                    border: white solid 2px;
+                    box-shadow: -2px 2px 5px rgb(135, 135, 135) ;
+                }
+            }
+        }
+
+        .btnsDiv {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+            row-gap: 10px;
+            column-gap: 10px;
+
+            .panelBtns {
+                margin: auto;
+                width: 75px;
+                height: 75px;
+                border: white solid 1px;
+                background-color: transparent;
+                border-radius: 5px;
+
+                .inventoryBtnImg {
+                    width: 55px;
+                }
+
+                .campBtnImg {
+                    width: 55px;
+                }
+
+                .storeBtnImg {
+                    width: 55px;
+                }
+
+                .exploreBtnImg {
+                    width: 55px;
+                }
+
+                .arenaBtnImg {
+                    width: 55px;
+                }
+            }
+
+            .panelBtns:hover {
+                border: white solid 2px;
+                box-shadow: -2px 2px 5px rgb(135, 135, 135);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .rightPanel {
+        display: grid;
+        grid-template-rows: 75% auto;
+        
+        .display {
+            width: 100%;
+            background-image: url(/assets/Medieval_Market.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .console {
+            display: grid;
+            grid-template-rows: auto auto;
+            align-content: space-between;
+            padding: 10px;
+            background-color: rgb(71, 71, 83);
+            border-top: white solid 1px;
+
+            .consoleInput {
+                height: 20px;
+                background-color: black;
+                color: rgb(188, 188, 150);
+                font-size: 15px;
+                padding-left: 15px;
+            }
+        }
+    }
+}

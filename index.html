@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Based RPG</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="scripts" href="scripts.js">
+</head>
+<body id="body">
+    <main id="main">
+        <div class="leftPanel">
+            <div class="charInfoDiv">
+                <div class="nameDiv">
+                    <span class="nameSpan">CHAR NOME</span>
+                    <div class="xpDiv">
+                        <span class="xpSpan">XP </span>
+                        <div class="xpBar">0</div>
+                    </div>
+                </div>
+                <div class="statusDiv">
+                    <div class="hpDiv">
+                        <span class="hpSpan">HP </span>
+                        <div class="hpBar">100</div>
+                    </div>
+                    <div class="manaDiv">
+                        <span class="manaSpan">MANA </span>
+                        <div class="manaBar">100</div>
+                    </div>
+                    <div class="sanDiv">
+                        <span class="sanSpan">SAN </span>
+                        <div class="sanBar">100</div>
+                    </div>
+                </div>
+            </div>
+            <div class="btnsDiv">
+                <button class="inventoryBtn panelBtns">
+                    <img class="inventoryBtnImg" src="assets/Backpack.png" alt="Inventory Button Image">
+                </button>
+                <button class="campBtn panelBtns">
+                    <img class="campBtnImg" src="assets/campfire.png" alt="Camp Button Image">
+                </button>
+                <button class="storeBtn panelBtns">
+                    <img class="storeBtnImg" src="assets/store.png" alt="Store Button Image">
+                </button>
+                <button class="exploreBtn panelBtns">
+                    <img class="exploreBtnImg" src="assets/Sword.png" alt="Explore Button Image">
+                </button>
+                <button class="arenaBtn panelBtns">
+                    <img class="arenaBtnImg" src="assets/Helmet.png" alt="Arena Button Image">
+                </button>
+            </div>
+        </div>
+        <div class="rightPanel">
+            <div class="display"></div>
+            <div class="console">
+                <span class="consoleText">- Console will display some information about the game, like attack hits, 
+                    heal points, store items and prices, camp actions, etc.</span>
+                <input class="consoleInput" type="text" placeholder="Take your action...">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

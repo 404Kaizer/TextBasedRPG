@@ -1,0 +1,146 @@
+:root {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(26, 26, 35);
+  margin: 0;
+  box-sizing: border-box;
+  color: rgb(188, 188, 150);
+  font-family: monospace;
+  font-size: 15px;
+  border: white solid 1px;
+}
+
+#body {
+  margin: 0;
+  height: 85vh;
+  padding: 50px;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 22% auto;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  border: white solid 1px;
+  background-color: rgb(22, 22, 30);
+  box-shadow: -15px 15px 10px rgb(0, 0, 0);
+}
+#main .leftPanel {
+  width: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  align-content: space-between;
+  padding: 10px;
+  border-right: white solid 1px;
+}
+#main .leftPanel .charInfoDiv {
+  display: grid;
+  row-gap: 20px;
+}
+#main .leftPanel .charInfoDiv .nameDiv {
+  display: grid;
+  row-gap: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#main .leftPanel .charInfoDiv .nameDiv .nameSpan {
+  text-align: center;
+}
+#main .leftPanel .charInfoDiv .nameDiv .xpDiv {
+  border: white solid 1px;
+}
+#main .leftPanel .charInfoDiv .nameDiv .xpDiv .xpBar {
+  text-align: center;
+  color: black;
+  background-color: greenyellow;
+}
+#main .leftPanel .charInfoDiv .nameDiv .xpDiv:hover {
+  border: white solid 2px;
+  box-shadow: -2px 2px 5px rgb(135, 135, 135);
+}
+#main .leftPanel .charInfoDiv .statusDiv {
+  display: grid;
+  row-gap: 20px;
+  font-size: 20px;
+}
+#main .leftPanel .charInfoDiv .statusDiv .hpDiv, #main .leftPanel .charInfoDiv .statusDiv .manaDiv, #main .leftPanel .charInfoDiv .statusDiv .sanDiv {
+  border: white solid 1px;
+}
+#main .leftPanel .charInfoDiv .statusDiv .hpDiv .hpBar, #main .leftPanel .charInfoDiv .statusDiv .hpDiv .manaBar, #main .leftPanel .charInfoDiv .statusDiv .hpDiv .sanBar, #main .leftPanel .charInfoDiv .statusDiv .manaDiv .hpBar, #main .leftPanel .charInfoDiv .statusDiv .manaDiv .manaBar, #main .leftPanel .charInfoDiv .statusDiv .manaDiv .sanBar, #main .leftPanel .charInfoDiv .statusDiv .sanDiv .hpBar, #main .leftPanel .charInfoDiv .statusDiv .sanDiv .manaBar, #main .leftPanel .charInfoDiv .statusDiv .sanDiv .sanBar {
+  text-align: center;
+}
+#main .leftPanel .charInfoDiv .statusDiv .hpDiv .hpBar, #main .leftPanel .charInfoDiv .statusDiv .manaDiv .hpBar, #main .leftPanel .charInfoDiv .statusDiv .sanDiv .hpBar {
+  background-color: red;
+}
+#main .leftPanel .charInfoDiv .statusDiv .hpDiv .manaBar, #main .leftPanel .charInfoDiv .statusDiv .manaDiv .manaBar, #main .leftPanel .charInfoDiv .statusDiv .sanDiv .manaBar {
+  background-color: blue;
+}
+#main .leftPanel .charInfoDiv .statusDiv .hpDiv .sanBar, #main .leftPanel .charInfoDiv .statusDiv .manaDiv .sanBar, #main .leftPanel .charInfoDiv .statusDiv .sanDiv .sanBar {
+  background-color: purple;
+}
+#main .leftPanel .charInfoDiv .statusDiv .hpDiv:hover, #main .leftPanel .charInfoDiv .statusDiv .manaDiv:hover, #main .leftPanel .charInfoDiv .statusDiv .sanDiv:hover {
+  border: white solid 2px;
+  box-shadow: -2px 2px 5px rgb(135, 135, 135);
+}
+#main .leftPanel .btnsDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  row-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+#main .leftPanel .btnsDiv .panelBtns {
+  margin: auto;
+  width: 75px;
+  height: 75px;
+  border: white solid 1px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+#main .leftPanel .btnsDiv .panelBtns .inventoryBtnImg {
+  width: 55px;
+}
+#main .leftPanel .btnsDiv .panelBtns .campBtnImg {
+  width: 55px;
+}
+#main .leftPanel .btnsDiv .panelBtns .storeBtnImg {
+  width: 55px;
+}
+#main .leftPanel .btnsDiv .panelBtns .exploreBtnImg {
+  width: 55px;
+}
+#main .leftPanel .btnsDiv .panelBtns .arenaBtnImg {
+  width: 55px;
+}
+#main .leftPanel .btnsDiv .panelBtns:hover {
+  border: white solid 2px;
+  box-shadow: -2px 2px 5px rgb(135, 135, 135);
+  cursor: pointer;
+}
+#main .rightPanel {
+  display: grid;
+  grid-template-rows: 75% auto;
+}
+#main .rightPanel .display {
+  width: 100%;
+  background-image: url(/assets/Medieval_Market.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main .rightPanel .console {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: space-between;
+  padding: 10px;
+  background-color: rgb(71, 71, 83);
+  border-top: white solid 1px;
+}
+#main .rightPanel .console .consoleInput {
+  height: 20px;
+  background-color: black;
+  color: rgb(188, 188, 150);
+  font-size: 15px;
+  padding-left: 15px;
+}/*# sourceMappingURL=styles.css.map */
