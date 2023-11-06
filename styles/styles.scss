@@ -153,18 +153,43 @@
 
         .console {
             display: grid;
-            grid-template-rows: auto auto;
-            align-content: space-between;
+            grid-template-rows: 85% auto;
+            align-content: center;
             padding: 10px;
             background-color: rgb(71, 71, 83);
             border-top: white solid 1px;
-
-            .consoleInput {
-                height: 20px;
+            
+            .consoleText {
+                overflow: auto;
+                resize: none;
+                font-size: 15px;
                 background-color: black;
                 color: rgb(188, 188, 150);
-                font-size: 15px;
-                padding-left: 15px;
+                cursor: auto;
+            }
+
+            .consoleGridInput {
+                display: grid;
+                grid-template-columns: 90% auto;
+
+                .consoleInput {
+                    height: 20px;
+                    background-color: black;
+                    color: rgb(188, 188, 150);
+                    font-size: 15px;
+                    padding-left: 15px;
+                }
+
+                .consoleInput:focus {
+                    outline: none;
+                }
+
+                .consoleSubmit {
+                    background-color: black;
+                    border-left: 0;
+                    color: rgb(188, 188, 150);
+                    font-size: 15px;
+                }
             }
         }
     }

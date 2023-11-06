@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Based RPG</title>
     <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="scripts" href="scripts.js">
+    <script src="/scripts/scripts.js" defer></script>
 </head>
 <body id="body">
     <main id="main">
         <div class="leftPanel">
             <div class="charInfoDiv">
                 <div class="nameDiv">
-                    <span class="nameSpan">CHAR NOME</span>
+                    <span class="nameSpan" contentEditable spellcheck="false">NOME</span>
                     <div class="xpDiv">
                         <span class="xpSpan">XP </span>
                         <div class="xpBar">0</div>
@@ -21,15 +21,15 @@
                 <div class="statusDiv">
                     <div class="hpDiv">
                         <span class="hpSpan">HP </span>
-                        <div class="hpBar">100</div>
+                        <div class="hpBar">0</div>
                     </div>
                     <div class="manaDiv">
                         <span class="manaSpan">MANA </span>
-                        <div class="manaBar">100</div>
+                        <div class="manaBar">0</div>
                     </div>
                     <div class="sanDiv">
                         <span class="sanSpan">SAN </span>
-                        <div class="sanBar">100</div>
+                        <div class="sanBar">0</div>
                     </div>
                 </div>
             </div>
@@ -54,9 +54,11 @@
         <div class="rightPanel">
             <div class="display"></div>
             <div class="console">
-                <span class="consoleText">- Console will display some information about the game, like attack hits, 
-                    heal points, store items and prices, camp actions, etc.</span>
-                <input class="consoleInput" type="text" placeholder="Take your action...">
+                <textarea class="consoleText" disabled></textarea>
+                <div class="consoleGridInput">
+                    <input class="consoleInput" type="text" placeholder="Escreva sua ação...">
+                    <button class="consoleSubmit" type="submit">ENTER</button>
+                </div>
             </div>
         </div>
     </main>

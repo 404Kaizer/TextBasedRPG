@@ -131,16 +131,37 @@
 }
 #main .rightPanel .console {
   display: grid;
-  grid-template-rows: auto auto;
-  align-content: space-between;
+  grid-template-rows: 85% auto;
+  align-content: center;
   padding: 10px;
   background-color: rgb(71, 71, 83);
   border-top: white solid 1px;
 }
-#main .rightPanel .console .consoleInput {
+#main .rightPanel .console .consoleText {
+  overflow: auto;
+  resize: none;
+  font-size: 15px;
+  background-color: black;
+  color: rgb(188, 188, 150);
+  cursor: auto;
+}
+#main .rightPanel .console .consoleGridInput {
+  display: grid;
+  grid-template-columns: 90% auto;
+}
+#main .rightPanel .console .consoleGridInput .consoleInput {
   height: 20px;
   background-color: black;
   color: rgb(188, 188, 150);
   font-size: 15px;
   padding-left: 15px;
+}
+#main .rightPanel .console .consoleGridInput .consoleInput:focus {
+  outline: none;
+}
+#main .rightPanel .console .consoleGridInput .consoleSubmit {
+  background-color: black;
+  border-left: 0;
+  color: rgb(188, 188, 150);
+  font-size: 15px;
 }/*# sourceMappingURL=styles.css.map */
